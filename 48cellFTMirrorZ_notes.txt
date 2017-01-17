@@ -1,0 +1,42 @@
+Bitruncated 24-cell
+https://en.wikipedia.org/wiki/Truncated_24-cells#Bitruncated_24-cell
+48 cells; 48 1C: R0, never move
+336 faces: 
+ - 144 octagons; 144 2C octagonal pieces, R1
+ - 192 triangles; 192 2C triangular pieces, R1
+576 edges; 576 3C, R2. Faces around an edge: 8-8-3
+288 vertices; 288 4C, R3
+
+each cell has 14 faces, 36 edges, and 24 vertices. Really comparable to 120-cell.
+25 nontrivial pieces per cell: 1200 pieces in total
+
+Sticker count: Each cell has: 
+1 cell sticker
+6 octagonal sticker
+8 triangular sticker
+36 edges
+24 vertices
+
+
+Octagonal 2C: 8 pieces in each orbit. 144/8 = 18 orbits. Moving each cell changes parity of 3 orbits.
+18 orbits divided into 3 groups (at least two ways to divide). Each group has 6 orbits: a straight line through a central cell + 4 helices around it + length-8 cycle perpendicular to the straight line
+Each orbit chains 8 cells. In each group, the 6 orbits chains all 48 cells. Each group is one way to partition 48 cells.
+Parity of a group = sum of parity of the 6 orbits in it.
+Since moving each cell changes one orbit in each group, the parity of all 3 groups are the same.
+
+Triangular 2C: 6 pieces in each orbit. 192/6 = 32 orbits. Moving each cell changes parity of 4 orbits.
+4 groups? each with 8 orbits?
+A straight line through a central cell in a diagonal way + length-6 chain perpendicular to the line + 6 helices?
+---------
+
+3C: 24 pieces in each orbit. 24 orbits
+The equator plane perpendicular to the center cell: 6 cells distance 2 to the center + 12 edge cells. 4 pieces on each of the 6 cells = 24.
+The pieces are like the vertices of a Rhombicuboctahedron. Turning a cell <=> rotating a square on rhombicuboctahedron by 180.
+On each cell there are 36 edges. They belong to 9 orbits, 4 pieces in each orbit. Since each turn swaps 2 pairs in each orbit, the permutation in each orbit is always even.
+The 3C pieces cannot be rotated in place. I don't see any way to mirror a 3C piece. As far as I find, orientation of 3C is automatically solved.
+
+-------------
+4C: seems to be in 1 orbit
+
+----------
+Plan: start from parity of 2C.
