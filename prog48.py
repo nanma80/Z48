@@ -1,11 +1,14 @@
 #!/usr/bin/env python
 
 import os
+import sys
 import datetime
 
 filename_init = 'solved.log'
-# filename_current = 'trying.log'
 filename_current = 'solving.log'
+
+if len(sys.argv) == 2:
+  filename, filename_current = sys.argv
 
 n_stickers_per_cell = 1 + 6 + 8 + 36 + 24 # 
 n_cells = 48

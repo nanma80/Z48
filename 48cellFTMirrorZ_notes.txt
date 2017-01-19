@@ -29,6 +29,11 @@ Triangular 2C: 6 pieces in each orbit. 192/6 = 32 orbits. Moving each cell chang
 A straight line through a central cell in a diagonal way + length-6 chain perpendicular to the line + 6 helices?
 
 2C pieces should not have orientation.
+
+Exploring triangular 2C parity.
+- 2C3paritytest1:
+Flip the following eight cells: around the central cell: UFR, UFL, UBR, UBL, F, B, L, R. Solve octagons and try to solve triangles. This sequence affects too many triangle orbits.
+
 ---------
 
 3C: 24 pieces in each orbit. 24 orbits
