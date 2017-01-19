@@ -46,4 +46,5 @@ Two pieces can be flipped (a<->b, c, d unchanged). But rotation (a->b->c->a, d u
 Plan: start from parity of 2C.
 - Solve a cell, 4D rotate it into the inverted center. Solve octagons from outside to inside. 
 - When we narrow down to cells close to the center, if some orbits are in odd perm, flip cells intuitively to solve parity.
+- Solve as much as triangle 2C as possible. Some triangle orbits will have odd perm
 - 
