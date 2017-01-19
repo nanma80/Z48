@@ -40,7 +40,7 @@ The 3C pieces cannot be rotated (a->b->c->a) in place. I don't see any way to mi
 -------------
 4C: seems to be in 1 orbit. 
 
-A piece can be flipped (a<->b, c, d unchanged). But known sequences are too long.
+Two pieces can be flipped (a<->b, c, d unchanged). But rotation (a->b->c->a, d unchanged) is not possible as far as I can see.
 
 ----------
 Plan: start from parity of 2C.

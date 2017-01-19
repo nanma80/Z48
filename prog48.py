@@ -4,8 +4,8 @@ import os
 import datetime
 
 filename_init = 'solved.log'
-filename_current = 'trying.log'
-# filename_current = 'solving.log'
+# filename_current = 'trying.log'
+filename_current = 'solving.log'
 
 n_stickers_per_cell = 1 + 6 + 8 + 36 + 24 # 
 n_cells = 48
