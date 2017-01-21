@@ -22,3 +22,4 @@ with open('matrix_2c.py', 'w') as f:
   f.write('matrix_2c8 = ' + str(orbits_to_matrix(cell48.face8_orbits)))
   f.write('\n')
   f.write('matrix_2c3 = ' + str(orbits_to_matrix(cell48.face3_orbits)))
+  f.write('\n')
