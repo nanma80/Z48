@@ -53,3 +53,32 @@ Plan: start from parity of 2C.
 - When we narrow down to cells close to the center, if some orbits are in odd perm, flip cells intuitively to solve parity.
 - Solve as much as triangle 2C as possible. Some triangle orbits will have odd perm
 - 
+
+2C3 parity:
+odd parity orbits:
+
+12 cross edge orbits:
+
+LB cross edge
+DB cross edge
+FL cross edge
+UF cross edge
+UR cross edge
+DR cross edge
+
+4 outside circles:
+perp to ULB-DFR
+perp to URB-DFL
+
+4 straight lines:
+ULB-DFR
+URB-DFL
+
+12 edges:
+UF
+UL
+FR
+RB
+DB
+DL
+
