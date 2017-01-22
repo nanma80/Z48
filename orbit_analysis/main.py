@@ -2,8 +2,22 @@ from cell48 import *
 
 cell48 = Cell48()
 
-for index in xrange(48):
-  print index, cell48.cells[index].value
+# for index in xrange(48):
+#   print index, cell48.cells[index].value
+
+# for orbit_index in xrange(32):
+#   orbit = cell48.face3_orbits[orbit_index]
+#   moves = sorted(list(orbit.moves))
+#   move_names = [cell48.cell_nicknames[cell_index] for cell_index in moves]
+#   print orbit_index, ', '.join(move_names)
+
+solution = (1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+print sum(solution)
+
+for index in xrange(len(solution)):
+  if solution[index] == 1:
+    print cell48.cell_nicknames[index]
+
 
 # 0 (0, 0, 0, 1)
 # 1 (0.0, 0.0, -0.7071067811865475, 0.7071067811865475)
@@ -53,3 +67,36 @@ for index in xrange(48):
 # 45 (0.0, 0.0, -0.7071067811865475, -0.7071067811865475)
 # 46 (0.7071067811865475, 0.0, 0.0, -0.7071067811865475)
 # 47 (0, 0, 0, -1)
+
+# 0 B, U, FU, BD, ,
+# 1 F, U, FD, BU, ,
+# 2 B, R, BL, FR, ,
+# 3 R, U, LU, RD, ,
+# 4 F, R, FL, BR, ,
+# 5 B, L, FL, BR, ,
+# 6 L, U, LD, RU, ,
+# 7 F, L, BL, FR, ,
+# 8 D, B, FD, BU, ,
+# 9 D, F, FU, BD, ,
+# 10 D, R, LD, RU, ,
+# 11 D, L, LU, RD, ,
+# 12 C, BRU, FLD, , ,
+# 13 C, FRU, BLD, , ,
+# 14 FLD, BLD, F2, B2, ,
+# 15 C, UBL, FRD, , ,
+# 16 UBL, BLD, U2, D2, ,
+# 17 FLD, FRD, L2, R2, ,
+# 18 UBL, BRU, L2, R2, ,
+# 19 FRU, FRD, U2, D2, ,
+# 20 BRU, FRU, F2, B2, ,
+# 21 C, DBR, FLU, , ,
+# 22 DBR, BLD, L2, R2, ,
+# 23 DBR, FRD, F2, B2, ,
+# 24 DBR, BRU, U2, D2, ,
+# 25 FLD, FLU, U2, D2, ,
+# 26 UBL, FLU, F2, B2, ,
+# 27 FRU, FLU, L2, R2, ,
+# 28 LD, FU, FL, BD, BR, RU
+# 29 LU, FD, BU, FL, RD, BR
+# 30 LU, BL, FU, FR, BD, RD
+# 31 BL, LD, FD, BU, FR, RU

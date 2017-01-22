@@ -17,7 +17,8 @@ class Cell48:
     distance_face3 = 1
     self.faces3 = self.populate_faces(distance_face3)
     self.face3_orbits = self.populate_face_orbits(self.faces3, 6)
-
+    self.populate_cell_nicknames()
+    self.populate_face3_orbit_nicknames()
 
   def populate_cells(self):
     cells = []
@@ -64,6 +65,16 @@ class Cell48:
       orbits.append(orbit)
 
     return orbits
+
+  def populate_cell_nicknames(self):
+    self.cell_nicknames = ['C', 'D', 'B', 'F', 'L', 'R', 'U'] \
+      + ['UBL', 'DBR', 'BRU', 'FRU', 'FLD', 'FLU', 'FRD', 'BLD'] \
+      + ['U2', 'L2', 'F2', 'R2', 'B2', 'D2'] \
+      + ['LU', 'BL', 'LD', 'FD', 'BU', 'FU', 'FL', 'FR', 'BD', 'RD', 'BR', 'RU'] \
+      + [''] * 16
+
+  def populate_face3_orbit_nicknames(self):
+    self.face3_orbit_nicknames = []
 
 class Cell48Tests(unittest.TestCase):
   def test_basic_counts(self):

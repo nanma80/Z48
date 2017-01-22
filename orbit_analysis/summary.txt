@@ -34,9 +34,109 @@ Four orbits passing center cell, 12 orbits passing the 12 edges of layer 2 cube
 22 BL (-0.7071067811865475, -0.7071067811865475, 0.0, 0.0)
 23 LD (0.0, -0.7071067811865475, -0.7071067811865475, 0.0)
 
+# 24 (0.7071067811865475, 0.0, -0.7071067811865475, 0.0)
+# 25 (-0.7071067811865475, 0.0, 0.7071067811865475, 0.0)
+# 26 (0.7071067811865475, 0.0, 0.7071067811865475, 0.0)
+# 27 (0.7071067811865475, -0.7071067811865475, 0.0, 0.0)
+# 28 (0.7071067811865475, 0.7071067811865475, 0.0, 0.0)
+# 29 (-0.7071067811865475, 0.0, -0.7071067811865475, 0.0)
+# 30 (0.0, 0.7071067811865475, -0.7071067811865475, 0.0)
+# 31 (-0.7071067811865475, 0.7071067811865475, 0.0, 0.0)
+# 32 (0.0, 0.7071067811865475, 0.7071067811865475, 0.0)
+
 +x: F
 -x: B
 +y: R
 -y: L
 +z: U
 -z: D
+
+['C', 'D', 'B', 'F', 'L', 'R', 'U'] 
++ ['UBL', 'DBR', 'BRU', 'FRU', 'FLD', 'FLU', 'FRD', 'BLD']
++ ['U2', 'L2', 'F2', 'R2', 'B2', 'D2']
++ ['LU', 'BL', 'LD', 'FD', 'BU', 'FU', 'FL', 'FR', 'BD', 'RD', 'BR', 'RU']
+
+cross edges:
+0 B, U, FU, BD, ,
+1 F, U, FD, BU, ,
+2 B, R, BL, FR, ,
+3 R, U, LU, RD, ,
+4 F, R, FL, BR, ,
+5 B, L, FL, BR, ,
+6 L, U, LD, RU, ,
+7 F, L, BL, FR, ,
+8 D, B, FD, BU, ,
+9 D, F, FU, BD, ,
+10 D, R, LD, RU, ,
+11 D, L, LU, RD, ,
+
+straight lines
+12 C, BRU, FLD, , ,
+13 C, FRU, BLD, , ,
+
+LD
+14 FLD, BLD, F2, B2, ,
+
+straight line
+15 C, UBL, FRD, , ,
+
+BL
+16 UBL, BLD, U2, D2, ,
+
+FD
+17 FLD, FRD, L2, R2, ,
+
+BU
+18 UBL, BRU, L2, R2, ,
+
+FR
+19 FRU, FRD, U2, D2, ,
+
+RU
+20 BRU, FRU, F2, B2, ,
+
+straight line
+21 C, DBR, FLU, , ,
+
+
+22 DBR, BLD, L2, R2, ,
+23 DBR, FRD, F2, B2, ,
+24 DBR, BRU, U2, D2, ,
+25 FLD, FLU, U2, D2, ,
+26 UBL, FLU, F2, B2, ,
+27 FRU, FLU, L2, R2, ,
+
+outside circles
+28 LD, FU, FL, BD, BR, RU
+29 LU, FD, BU, FL, RD, BR
+30 LU, BL, FU, FR, BD, RD
+31 BL, LD, FD, BU, FR, RU
+
+12 cross edge orbits:
+
+LB cross edge, 5
+DB cross edge, 8
+FL cross edge, 7
+UF cross edge, 1
+UR cross edge, 3
+DR cross edge, 10
+
+4 outside circles:
+perp to ULB-DFR, 30
+perp to URB-DFL, 28
+
+4 straight lines:
+ULB-DFR, 15
+URB-DFL, 12
+
+12 edges:
+UF, 27
+UL, 26
+FR, 19
+RB, 24
+DB, 22
+DL, 14
+
+state_2C3_orbit = [0] * 32
+for one in [5,8,7,1,3,10, 30, 28, 15, 12, 27, 26, 19, 24, 22, 14]:
+  state_2C3_orbit[one] = 1
