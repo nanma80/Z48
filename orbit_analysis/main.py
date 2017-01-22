@@ -2,8 +2,8 @@ from cell48 import *
 
 cell48 = Cell48()
 
-# for index in xrange(48):
-#   print index, cell48.cells[index].value
+for index in xrange(48):
+  print index, cell48.cells[index].value
 
 # for orbit_index in xrange(32):
 #   orbit = cell48.face3_orbits[orbit_index]
@@ -11,7 +11,7 @@ cell48 = Cell48()
 #   move_names = [cell48.cell_nicknames[cell_index] for cell_index in moves]
 #   print orbit_index, ', '.join(move_names)
 
-solution = (1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+solution = (1, 1, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 print sum(solution)
 
 for index in xrange(len(solution)):
